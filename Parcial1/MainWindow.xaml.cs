@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Parcial1.UI.Consulta;
+using Parcial1.UI.Registro;
 
 namespace Parcial1
 {
@@ -23,6 +25,18 @@ namespace Parcial1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RegistraButton_Click(object sender, RoutedEventArgs e)
+        {
+            rArticulo ra = new rArticulo();
+            ra.Show();
+        }
+
+        private void ConsultarButton_Click(object sender, RoutedEventArgs e)
+        {
+            cArticulo ca = new cArticulo();
+            ca.Show();
         }
     }
 }

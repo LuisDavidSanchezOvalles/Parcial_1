@@ -12,3 +12,5 @@ Existencia int,
 Costo decimal,
 ValorInventario decimal,
 );
+
+drop Table Articulo
